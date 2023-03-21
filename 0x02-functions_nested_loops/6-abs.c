@@ -22,8 +22,8 @@ else if (n == 0)
 }
 else if (n < 0)
 {
-	abs_dig = -n;
-	return (abs_dig);
+abs_dig = (-1) * n;
+return (abs_dig);
 }
 
 }
