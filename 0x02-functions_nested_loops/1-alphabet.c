@@ -1,8 +1,10 @@
 #include"main.h"
 /**
- * function - Entry point
+ * function - print_alphabet
  *
  * prints the alphabet, in lowercase, followed by a new line
+ *
+ *
  */
 void print_alphabet(void)
 {
