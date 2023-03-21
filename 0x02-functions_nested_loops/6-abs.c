@@ -8,22 +8,22 @@
  */
 int _abs(int n)
 {
-int abs_dig;
+int dig;
 
 if (n > 0)
 {
-	abs_dig = n;
-	return (abs_dig);
+	dig = n;
+	return (dig);
 }
 else if (n == 0)
 {
-	abs_dig = n;
-	return (abs_dig);
+	dig = n;
+	return (dig);
 }
 else if (n < 0)
 {
-abs_dig = (-1) * n;
-return (abs_dig);
+	dig = (-1) * n;
+	return (dig);
 }
 
 }
