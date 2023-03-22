@@ -15,7 +15,10 @@ void times_table(void)
 		{
 			Mult_dig = i * j;
 			if (Mult_dig <= 9)
+			{
 				_putchar(Mult_dig + 48);
+				_putchar(' ');
+			}
 			else
 			{
 				_putchar((Mult_dig / 10) + 48);
