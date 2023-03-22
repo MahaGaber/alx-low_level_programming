@@ -14,7 +14,13 @@ void times_table(void)
 		for (j = 0; j <= 9; j++)
 		{
 			Mult_dig = i * j;
-			_putchar(Mult_dig + '0');
+			if (Mult_dig <= 9)
+				_putchar(Mult_dig + 48);
+			else
+			{
+				_putchar((Mult_dig / 10) + 48);
+				_putchar((Mult_dig % 10) + 48);
+			}
 			if (j != 9)
 			{
 				_putchar(',');
@@ -24,4 +30,3 @@ void times_table(void)
 	_putchar('\n');
 	}
 }
-
