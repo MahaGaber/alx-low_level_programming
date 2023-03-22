@@ -1,6 +1,6 @@
 #include"main.h"
 /**
- * times_table - it takes one integer argument
+ *print_to_98 - it takes one integer argument
  *@n: integer number
  *
  *prints all natural numbers from n to 98, followed by a new line.
@@ -13,7 +13,8 @@ void print_to_98(int n)
 	{
 		for (i = n; i >= 98; i--)
 		{
-		_putchar(i);
+			_putchar((i / 10) + 48);
+			_putchar((i % 10) + 48);
 		if (i != 98)
 		{
 			_putchar(',');
@@ -26,7 +27,8 @@ void print_to_98(int n)
 	{
 		for (i = n; i <= 98; i++)
 		{
-		_putchar(i);
+			_putchar((i / 10) + 48);
+			_putchar((i % 10) + 48);
 		if (i != 98)
 		{
 			_putchar(',');
