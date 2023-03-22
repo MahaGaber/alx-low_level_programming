@@ -17,7 +17,6 @@ void times_table(void)
 			if (Mult_dig <= 9)
 			{
 				_putchar(Mult_dig + 48);
-				_putchar(' ');
 			}
 			else
 			{
@@ -27,6 +26,7 @@ void times_table(void)
 			if (j != 9)
 			{
 				_putchar(',');
+				_putchar(' ');
 				_putchar(' ');
 			}
 		}
