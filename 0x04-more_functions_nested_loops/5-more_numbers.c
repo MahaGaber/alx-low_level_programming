@@ -1,11 +1,11 @@
 #include"main.h"
 /**
- * print_most_numbers - it takes two integer argument
+ * more_numbers - it takes two integer argument
  *
  *Return: print numbers 0 .. 9
  */
 
-void print_most_numbers(void)
+void more_numbers(void)
 {
 	int i, j;
 
