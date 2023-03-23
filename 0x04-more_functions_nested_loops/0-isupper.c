@@ -12,7 +12,7 @@ int _isupper(int c)
 
 	for (j = 65; j <= 90; j++)
 	{
-		if (_putchar(j) == c)
+		if (j == c)
 			return (1);
 		else
 			return (0);
