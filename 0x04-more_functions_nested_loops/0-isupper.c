@@ -10,9 +10,9 @@ int _isupper(int c)
 {
 	int j;
 
-	for (j = 'A'; j <= 'Z'; j++)
+	for (j = 65; j <= 90; j++)
 	{
-		if (j == c)
+		if (_putchar(c) == j)
 			return (1);
 		else
 			return (0);
