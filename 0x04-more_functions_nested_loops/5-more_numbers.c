@@ -7,9 +7,9 @@
 
 void more_numbers(void)
 {
-	int i, j;
+	int i, j, num1, num2;
 
-	for (j = 0; j <= 9; j++)
+	for (j = 1; j <= 10; j++)
 	{
 		for (i = 0; i <= 14; i++)
 	{
@@ -19,8 +19,10 @@ void more_numbers(void)
 		}
 		else
 		{
-		_putchar((i / 10) + 48);
-		_putchar((i % 10) + 48);
+			num1 = (i / 10);
+			num2 = (i % 10);
+			_putchar(num1 + 48);
+			_putchar(num2 + 48);
 		}
 	}
 	_putchar('\n');
