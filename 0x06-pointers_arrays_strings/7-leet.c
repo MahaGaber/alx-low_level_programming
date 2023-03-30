@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include"main.h"
+#include <stdio.h>
 /**
  * leet - it takes one integer argument
  * @c: accept pointer character
@@ -9,9 +9,9 @@
 char *leet(char *c)
 {
 char *cp = c;
+unsigned int i;
 char key[] = {'A', 'E', 'O', 'T', 'L'};
 char value[] = {4, 3, 0, 7, 1};
-int j, i, temp;
 
 while (*c)
 {
