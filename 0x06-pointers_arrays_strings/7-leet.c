@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include"main.h"
 /**
  * leet - it takes one integer argument
