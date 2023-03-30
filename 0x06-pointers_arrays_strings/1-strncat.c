@@ -14,10 +14,10 @@ int counter = 0, i;
 while (dest[counter])
 	counter++;
 
-for (i = 0; src[i] && i < n; i++)
+for (i = 0; src[i] != '\0' && i < n; i++)
 dest[counter + i] = src[i];
 
-dest[counter + i] = "\0";
+dest[counter + i] = '\0';
 
 return (dest);
 }
