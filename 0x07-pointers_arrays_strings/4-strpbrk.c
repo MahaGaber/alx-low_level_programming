@@ -1,12 +1,12 @@
 #include"main.h"
 /**
- * _strspn - itgets the length of a prefix substring
+ * _strpbrk - itgets the length of a prefix substring
  * @s: accept pointer character
  * @accept:accept pointer character
  * *Return:integer number
  */
 
-unsigned int _strspn(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 int i, j;
 char *ptr;
@@ -23,7 +23,7 @@ for (i = 0; s[i] != '\0'; i++)
 	}
 }
 
-return (i);
+return ('\0');
 }
 
 
