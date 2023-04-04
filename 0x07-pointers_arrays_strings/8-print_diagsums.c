@@ -15,8 +15,9 @@ sum_diag_left = 0, sum_diag_right = 0;
 
 for (i = 0; i < size; i++)
 {
-	sum_diag_left += a[i][i];
-	sum_diag_right += a[i][size - i - 1];
+	sum_diag_left += a[i];
+	sum_diag_right += a[size - i - 1];
+	a += size;
 }
 printf("%d, ", sum_diag_left);
 printf("%d\n", sum_diag_right);
