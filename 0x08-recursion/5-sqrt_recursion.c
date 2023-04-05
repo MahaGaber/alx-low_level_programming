@@ -10,7 +10,7 @@ int _sqrt_recursion(int n)
 	return (sqrt1(n, 1));
 }
 /**
- * sqrt - it prints returns the square root of a given number
+ * sqrt1 - it prints returns the square root of a given number
  * @n: accept integer number
  * @test: accept integer number
  * *Return:integer number
