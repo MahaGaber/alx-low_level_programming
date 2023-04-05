@@ -7,7 +7,7 @@
 
 int _sqrt_recursion(int n)
 {
-	return (sqrt(n, 1));
+	return (sqrt1(n, 1));
 }
 /**
  * sqrt - it prints returns the square root of a given number
@@ -15,12 +15,12 @@ int _sqrt_recursion(int n)
  * @test: accept integer number
  * *Return:integer number
  */
-int sqrt(int n, int test)
+int sqrt1(int n, int test)
 {
 	if (test * test == n)
 		return (test);
 	else if (test * test < n)
-	return (sqrt(n, test + 1));
+	return (sqrt1(n, test + 1));
 	else
 		return (-1);
 }
