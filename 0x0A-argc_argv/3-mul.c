@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 /**
  * main - Entry point
  * @argc: accept integer number
@@ -11,7 +12,7 @@ int main(int argc, char *argv[])
 
 	if (argc == 3)
 	{
-		multiply = argv[1] * argv[2];
+		multiply = atoi(argv[1]) * atoi(argv[2]);
 		printf("%d\n", multiply);
 	}
 	else
