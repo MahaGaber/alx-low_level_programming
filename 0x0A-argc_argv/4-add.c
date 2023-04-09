@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<ctype.h>
+#include<stdlib.h>
 /**
  * main - Entry point
  * @argc: accept integer number
@@ -21,7 +22,7 @@ int main(int argc, char *argv[])
 		}
 		else
 		{
-		add_num += argv[i];
+		add_num += isdigit(argv[i]);
 		}
 	}
 	printf("%d\n", add_num);
