@@ -26,6 +26,7 @@ int main(int argc, char *argv[])
 					break;
 				}
 			}
+			printf("%d\n", change_cents);
 		}
 		else
 		{
