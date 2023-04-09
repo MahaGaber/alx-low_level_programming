@@ -9,18 +9,27 @@
  */
 int main(int argc, char *argv[])
 {
-	int add_num = 0;
-	char *c;
+	int i, add_num = 0;
 
-	while (--argc)
+	if (argc > 2)
 	{
-		for (c = argv[argc]; *c; c++)
-			if (*c < '0' || *c > '9')
+	for (i = 1; i < argc; i++)
+	{
+		if (argv[i] < '0' || argv[i] > '9')
 			{
-				printf("Error\n");
-				return (1);
-			}
-		add_num += atoi(argv[argc]);
+		printf("Error\n");
+		return (1);
+		}
+		else
+		{
+		add_num += atoi(argv[i]);
+		}
+	}
+	printf("%d\n", add_num);
+	}
+	else
+	{
+		printf("0\n");
 	}
 	return (0);
 }
