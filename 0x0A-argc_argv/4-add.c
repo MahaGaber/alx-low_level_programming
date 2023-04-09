@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 		}
 		else
 		{
-		add_num += isdigit(argv[i]);
+		add_num += atoi(argv[i]);
 		}
 	}
 	printf("%d\n", add_num);
