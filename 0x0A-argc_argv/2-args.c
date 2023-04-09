@@ -5,13 +5,15 @@
  * @argv: pointer of character
  * Return: Always 0 (Success)
  */
-int main(int argc, __attribute__((unused)) char *argv[])
+int main(int argc, char *argv[])
 {
-	int count;
-	
-	count = argc - 1;
-	printf("%d\n", count);
+	int i = 0;
 
+	while (argc--)
+	{
+		printf("%s\n", argv[i]);
+		i++;
+	}
 	return (0);
 }
 
