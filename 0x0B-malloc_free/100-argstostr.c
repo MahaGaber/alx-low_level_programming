@@ -40,7 +40,7 @@ for (i = 0; i < ac; i++)
 			s[cmpt] = av[i][j];
 
 		s[cmpt] = '\n';
-		cmpt++
+		cmpt++;
 	}
 s[cmpt] = '\0';
 return (s);
