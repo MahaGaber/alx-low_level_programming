@@ -24,16 +24,17 @@ int i, nc = 0, j = 0, cmpt = 0;
 char *s;
 
 if (ac == 0 || av == NULL)
+{
 	return (NULL);
-
-	for (i = 0; i < ac; i++, nc++)
+}
+for (i = 0; i < ac; i++, nc++)
 		nc += _strlen(av[i]);
 
-	s = malloc(sizeof(char) * nc + 1);
-	if (s == 0)
+s = malloc(sizeof(char) * nc + 1);
+if (s == 0)
 	return (NULL);
 
-	for (i = 0; i < ac; i++)
+for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j] != '\0'; j++, cmpt++)
 			s[cmpt] = av[i][j];
