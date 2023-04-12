@@ -27,6 +27,11 @@ ptr = malloc(size_s1 * sizeof(*s1) + size_s2 * sizeof(*s2) + 1);
 if (ptr == NULL)
 return (NULL);
 
+if (!s1[i])
+	s1[i] = '\0';
+if (!s2[i])
+	s1[i] = '\0';
+	
 while (s1[i])
 {
 ptr[j] = s1[i];
