@@ -13,7 +13,7 @@ char *ptr;
 if (size == 0)
 	return (NULL);
 
-ptr = malloc(size * sizeof(*c));
+ptr = malloc(size * sizeof(c));
 if (ptr == NULL)
 	return (NULL);
 
