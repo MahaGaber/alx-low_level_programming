@@ -18,7 +18,7 @@ ptr = malloc(height * sizeof(*ptr));
 if (ptr == NULL)
 return (NULL);
 
-	for (i = 0; i < width; i++)
+	for (i = 0; i < height; i++)
 	{
 	ptr[i] = malloc(width * sizeof(**ptr));
 	if (ptr[i] == 0)
@@ -28,7 +28,7 @@ return (NULL);
 		free(ptr);
 		return (NULL);
 	}
-	for (j = 0; j < height; j++)
+	for (j = 0; j < width; j++)
 		ptr[i][j] = 0;
 	}
 return (ptr);
