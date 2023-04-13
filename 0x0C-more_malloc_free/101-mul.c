@@ -20,11 +20,11 @@ void _printInt(unsigned long int number)
 }
 /**
  * _put - it print
- * @src: accept pointer of character
+ * @str: accept pointer of character
  *Return:
  */
 
-void _put(char *src)
+void _put(char *str)
 {
 	int i;
 
@@ -69,6 +69,7 @@ int _atoi(char *str)
  */
 int main(int argc, char *argv[])
 {
+	(void)argc;
 	unsigned long int multiply;
 
 	if (argc == 3)
