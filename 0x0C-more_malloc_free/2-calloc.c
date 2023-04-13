@@ -13,7 +13,7 @@ void *ptr;
 if (nmemb == 0 || size == 0)
 	return (NULL);
 
-ptr = malloc(sizeof(int) * nmemb);
+ptr = malloc(size * nmemb);
 if (ptr == NULL)
 	return (NULL);
 
