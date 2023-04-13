@@ -77,7 +77,7 @@ int main(int argc, char *argv[])
 		if (_atoi(argv[1]) == 0 ||  _atoi(argv[2]) == 0)
 		{
 		_put("Error ");
-		_putchar('\n');		
+		_putchar('\n');	
 		exit(98);
 		}
 		else
@@ -90,7 +90,7 @@ int main(int argc, char *argv[])
 	else
 	{
 		_put("Error ");
-		_putchar('\n');		
+		_putchar('\n');	
 		exit(98);
 	}
 
