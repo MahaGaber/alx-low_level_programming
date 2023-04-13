@@ -13,12 +13,9 @@ void *ptr;
 if (nmemb == 0 || size == 0)
 	return (NULL);
 
-ptr = malloc(size * nmemb);
+ptr = malloc(nmemb * size);
 if (ptr == NULL)
 	return (NULL);
-
-while (nmemb--)
-	*ptr++ = 0;
 
 return (ptr);
 }
