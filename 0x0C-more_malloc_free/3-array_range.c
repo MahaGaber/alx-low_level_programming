@@ -15,7 +15,7 @@ if (min > max)
 	return (NULL);
 
 size = max - min + 1;
-ptr = malloc(size);
+ptr = malloc(sizeof(int));
 if (ptr == NULL)
 	return (NULL);
 
