@@ -74,13 +74,23 @@ int main(int argc, char *argv[])
 
 	if (argc == 3)
 	{
+		if (_atoi(argv[1]) == 0 ||  _atoi(argv[2]) == 0)
+		{
+		_put("Error ");
+		_putchar('\n');		
+		exit(98);
+		}
+		else
+		{
 		multiply = _atoi(argv[1]) * _atoi(argv[2]);
 		_printInt(multiply);
 		_putchar('\n');
+		}
 	}
 	else
 	{
 		_put("Error ");
+		_putchar('\n');		
 		exit(98);
 	}
 
