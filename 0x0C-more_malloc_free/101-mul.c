@@ -69,8 +69,7 @@ int _atoi(char *str)
  */
 int main(int argc, char *argv[])
 {
-	(void)argc;
-	int multiply;
+	unsigned long int multiply;
 
 	if (argc == 3)
 	{
