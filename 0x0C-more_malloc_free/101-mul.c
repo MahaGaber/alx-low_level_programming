@@ -70,27 +70,25 @@ int _atoi(char *str)
 int main(int argc, char *argv[])
 {
 	(void)argc;
-	unsigned long int multiply;
 
 	if (argc == 3)
 	{
 		if (_atoi(argv[1]) == 0 ||  _atoi(argv[2]) == 0)
 		{
 		_put("Error ");
-		_put('\n');	
+		_putchar('\n');
 		exit(98);
 		}
 		else
 		{
-		multiply = _atoi(argv[1]) * _atoi(argv[2]);
-		_printInt(multiply);
-		_put('\n');
+		_printInt(_atoi(argv[1]) * _atoi(argv[2]));
+		_putchar('\n');
 		}
 	}
 	else
 	{
 		_put("Error ");
-		_put('\n');	
+		_putchar('\n');
 		exit(98);
 	}
 
