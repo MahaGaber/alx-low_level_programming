@@ -31,7 +31,7 @@ if (nmemb == 0 || size == 0)
 	return (NULL);
 
 ptr = malloc(sizeof(int) * nmemb);
-if (ptr == NULL)
+if (ptr == 0)
 	return (NULL);
 
 _mem(ptr, 0, sizeof(int) * nmemb);
