@@ -17,6 +17,9 @@ ptr = malloc(nmemb * size);
 if (ptr == NULL)
 	return (NULL);
 
+while (nmemb--)
+	*ptr++ = 0;
+
 return (ptr);
 }
 
