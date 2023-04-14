@@ -9,10 +9,10 @@
 
 char *_mem(char *str, char c, unsigned int number)
 {
-	char *p = s;
+	char *p = str;
 
 	while (number--)
-		*s++ = b;
+		*str++ = c;
 
 	return (p);
 }
@@ -26,7 +26,6 @@ char *_mem(char *str, char c, unsigned int number)
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 void *ptr;
-int i;
 
 if (nmemb == 0 || size == 0)
 	return (NULL);
@@ -35,7 +34,7 @@ ptr = malloc(nmemb * size);
 if (ptr == NULL)
 	return (NULL);
 
-_mem(ptr, 0, sizeof(int) * nmemb);
+_mem(ptr, 0, size);
 
 return (ptr);
 }
