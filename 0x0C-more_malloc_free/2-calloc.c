@@ -30,11 +30,11 @@ void *ptr;
 if (nmemb == 0 || size == 0)
 	return (NULL);
 
-ptr = malloc(sizeof(int) * nmemb);
+ptr = malloc(size * nmemb);
 if (ptr == 0)
 	return (NULL);
 
-_mem(ptr, 0, sizeof(int) * nmemb);
+_mem(ptr, 0, size * nmemb);
 
 return (ptr);
 }
