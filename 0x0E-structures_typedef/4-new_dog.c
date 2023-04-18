@@ -1,39 +1,5 @@
 #include"dog.h"
-/**
- * _strlen - it get length of string
- * @s: accept pointer character
- *
- *Return:length of string
- */
-
-int _strlen(const char *s)
-{
-int counter;
-
-for (counter = 0; *s != '\0'; s++)
-	counter++;
-return (counter);
-}
-
-/**
- * _strcpy - it return dest with a copy of src string
- * @dest: accept pointer character
- * @src:accept pointer character
- *Return:pointer character
- */
-
-char *_strcpy(char *dest, char *src)
-{
-int  i;
-
-
-for (i = 0; src[i] != '\0'; i++)
-dest[i] = src[i];
-
-dest[i] = '\0';
-
-return (dest);
-}
+#include <string.h>
 
 /**
  * new_dog - it copy values
@@ -46,33 +12,34 @@ return (dest);
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d;
-	
+
 	if (!name || age < 0 || !owner)
 		return (NULL);
-		
+
 	d = (dog_t *)malloc(sizeof(dog_t));
 	if (d == NULL)
 		return (NULL);
 
-	d->name = malloc(sizeof(char) *  (_strlen(name) + 1));
+	d->name = malloc(sizeof(char) *  (strlen(name) + 1));
 	if (d->name == NULL)
 	{
 		free(d);
 		return (NULL);
 	}
+	d->name = strcpy(d->name, name);
 
-	d->owner = malloc(sizeof(char) *  (_strlen(owner) + 1));
+	d->owner = malloc(sizeof(char) *  (strlen(owner) + 1));
 	if (d->owner == NULL)
 	{
 		free(d->name);
 		free(d);
 		return (NULL);
 	}
+	d->owner = strcpy(d->owner, owner);
 
-	d->name = _strcpy(d->name, name);
 	d->age = age;
-	d->owner = _strcpy(d->owner, owner);
-return (d);
+
+	return (d);
 }
 
 
