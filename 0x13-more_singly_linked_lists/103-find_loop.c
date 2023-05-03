@@ -13,12 +13,20 @@ listint_t *find_listint_loop(listint_t *head)
 	if (head == NULL)
 		return (NULL);
 
-	while (slow_ptr && fast_ptr && fast_ptr->next)
+	while (fast_ptr != NULL && fast_ptr->next != NULL)
 	{
 		slow_ptr = slow_ptr->next;
 		fast_ptr = fast_ptr->next->next;
 		if (slow_ptr == fast_ptr)
+		{
+			slow_ptr = head;
+			while (slow_ptr != fast_ptr)
+			{
+				slow_ptr = slow_ptr->next;
+				fast_ptr = fast_ptr->next;
+			}
 			return (slow_ptr);
+		}
 	}
 
 	return (NULL);
